@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ORIGAMI DE NAVIDAD</string>
+    <string name="title_anima">ANIMACIÓN</string>
+    <string name="title_menu">MENU</string>
+    <string name="title_canciones">CANCIONES NAVIDEÑAS</string>
+    <string name="menu_arb">MODELOS DE ARBOLES</string>
+    <string name="menu_est">MODELOS DE ESTRELLAS</string>
+    <string name="menu_caj">MODELOS DE CAJAS</string>
+</resources>

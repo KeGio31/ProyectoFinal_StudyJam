@@ -1,6 +1,7 @@
 package com.androidbolivia.origamidenavidad;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,11 +10,17 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+import java.io.IOException;
+
 public class MainActivity extends AppCompatActivity {
     private ImageView imNav;
     private Animation animacion;
     private MediaPlayer sound;
     private int indica;
+    private ImageView coverView;
+    private MediaPlayer musica;
+    private int selec;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         imNav = (ImageView) findViewById(R.id.arbol_navi);
         sound = MediaPlayer.create(getApplicationContext(), R.raw.boton);
+        coverView = (ImageView) findViewById(R.id.cover);
+
     }
 
     public void rot(View view) {
@@ -51,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(getApplicationContext(),MenuActivity.class);
         intent.putExtra("numero",indica);
         startActivity(intent);
+        sound.release();
 
     }
     public void estrellas(View view){
@@ -58,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(getApplicationContext(),MenuActivity.class);
         intent.putExtra("numero",indica);
         startActivity(intent);
+        sound.release();
 
     }
     public void cajas(View view){
@@ -65,5 +76,71 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(getApplicationContext(),MenuActivity.class);
         intent.putExtra("numero",indica);
         startActivity(intent);
+        sound.release();
     }
+    public void  jingle(View view){
+
+        coverView.setImageResource(R.drawable.trap);
+        selec=1;
+        crear(selec);
+
+    }
+    public void  sabanero(View view){
+
+
+        coverView.setImageResource(R.drawable.burritosbanero);
+        selec=2;
+        crear(selec);
+
+    }
+    public void  merry(View view){
+
+
+        coverView.setImageResource(R.drawable.rock);
+        selec=3;
+        crear(selec);
+    }
+    public void  feliz(View view){
+
+        coverView.setImageResource(R.drawable.feliznavidad);
+        selec=4;
+        crear(selec);
+
+
+    }
+    public void crear(int selec){
+       if(selec==1){
+           if(sound.isPlaying()){
+               sound.release();
+           }
+           sound = MediaPlayer.create(getApplicationContext(), R.raw.jingle);
+           sound.start();
+       }
+        if(selec==2){
+            if(sound.isPlaying()){
+                sound.release();
+            }
+            sound = MediaPlayer.create(getApplicationContext(), R.raw.burrito);
+            sound.start();
+        }
+        if(selec==3){
+            if(sound.isPlaying()){
+                sound.release();
+            }
+            sound = MediaPlayer.create(getApplicationContext(), R.raw.christmasrock);
+            sound.start();
+        }
+        if(selec==4){
+            if(sound.isPlaying()){
+                sound.release();
+            }
+            sound = MediaPlayer.create(getApplicationContext(), R.raw.feliznavidad);
+            sound.start();
+        }
+
+
+
+    }
+
+
 }

@@ -154,16 +154,66 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="150dp"
                     android:orientation="horizontal">
 
                     <ImageView
+                        android:id="@+id/cover"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/defaulmusic"
+                        android:layout_weight="2"/>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent">
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="4">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Jingle Balls version Trap"
+                            android:textSize="18dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/holo_red_dark"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="center_vertical"
+                            android:onClick="jingle"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Burrito Sabanero (Flex)"
+                            android:textSize="18dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/holo_red_dark"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="center_vertical"
+                            android:onClick="sabanero"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Merry Christmas Rock"
+                            android:textSize="20dp"
+                            android:layout_weight="1"
+                            android:id="@+id/textView2"
+                            android:background="@android:color/holo_red_dark"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="center_vertical"
+                            android:onClick="merry"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Feliz Navidad"
+                            android:textSize="18dp"
+                            android:id="@+id/textView"
+                            android:layout_weight="1"
+                            android:background="@android:color/holo_red_dark"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="center_vertical"
+                            android:onClick="feliz"/>
 
 
                     </LinearLayout>

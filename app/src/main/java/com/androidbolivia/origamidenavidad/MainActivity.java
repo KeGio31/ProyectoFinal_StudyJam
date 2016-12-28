@@ -3,6 +3,7 @@ package com.androidbolivia.origamidenavidad;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -141,6 +142,32 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+    public void stop(View view){
+        sound.stop();
+        coverView.setImageResource(R.drawable.defaulmusic);
+
+    }
+    public void gmail(View view){
+        String[] to={"kegio.dirq@gmail.com","kevin_311997@hotmail.com"};
+        Intent email=new Intent(Intent.ACTION_SEND);
+        email.putExtra(Intent.EXTRA_EMAIL,to);
+        startActivity(Intent.createChooser(email,"Enviar Email"));
+
+
+    }
+    public void github(View view){
+        Intent pagina=new Intent(Intent.ACTION_VIEW);
+        pagina.setData(Uri.parse("https://www.github.com/kegio31"));
+        startActivity(pagina);
+
+    }
+    public void face(View view){
+        Intent pagina=new Intent(Intent.ACTION_VIEW);
+        pagina.setData(Uri.parse("https://www.facebook.com/kegiod"));
+        startActivity(pagina);
+
+    }
+
 
 
 }

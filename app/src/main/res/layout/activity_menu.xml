@@ -9,7 +9,8 @@
     android:paddingRight="0dp"
     android:paddingTop="0dp"
     tools:context="com.androidbolivia.origamidenavidad.MenuActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:weightSum="15">
     <TabHost
         android:id="@android:id/tabhost"
         android:layout_width="match_parent"
@@ -314,7 +315,7 @@
     </TabHost>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:layout_weight="1"
         android:orientation="horizontal"
         >
@@ -326,9 +327,35 @@
             android:onClick="atras"
             android:background="#000000" />
         <LinearLayout
+            android:layout_marginLeft="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="2">
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SIGUEME EN:"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:gravity="center_vertical"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_github"
+                android:layout_weight="1"
+                android:onClick="github"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_gmail"
+                android:layout_weight="1"
+                android:onClick="gmail"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_facebook"
+                android:layout_weight="1"
+                android:onClick="face"/>
 
         </LinearLayout>
 

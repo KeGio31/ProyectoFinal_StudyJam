@@ -31,33 +31,253 @@
                    android:id="@+id/ARBOLES"
                    android:layout_width="match_parent"
                    android:layout_height="match_parent"
-                   android:orientation="vertical">
-                   <TextView
+                   android:orientation="vertical"
+                   android:weightSum="3">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:weightSum="3"
+                       android:layout_weight="1">
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:src="@drawable/arbol1"
+                           android:layout_weight="1"
+                           android:onClick="arbo1"/>
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:src="@drawable/arbol2"
+                           android:layout_weight="1"
+                           android:onClick="arbo2"/>
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:src="@drawable/arbol3"
+                           android:layout_weight="1"
+                           android:onClick="arbo3"
+                           />
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:weightSum="3"
+                       android:layout_weight="1">
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:src="@drawable/arbol4"
+                           android:layout_weight="1"
+                           android:onClick="arbo4"/>
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:src="@drawable/arbol5"
+                           android:layout_weight="1"
+                           android:onClick="arbo5"/>
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:src="@drawable/arbol6"
+                           android:layout_weight="1"
+                           android:onClick="arbo6"/>
+
+                   </LinearLayout>
+                   <LinearLayout
                        android:layout_width="match_parent"
                        android:layout_height="match_parent"
-                       android:text="Contenido 1"/>
+                       android:layout_weight="1">
+
+
+                   </LinearLayout>
+
+
 
                </LinearLayout>
                 <LinearLayout
                     android:id="@+id/ESTRELLAS"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Contenido 2"/>
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/estre7"
+                                android:layout_weight="1"
+                                android:onClick="estr7"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/estre8"
+                                android:layout_weight="1"
+                                android:onClick="estr8"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/estre9"
+                                android:layout_weight="1"
+                                android:onClick="estr9"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/estre10"
+                                android:layout_weight="1"
+                                android:onClick="estr10"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/estre11"
+                                android:layout_weight="1"
+                                android:onClick="estr11"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/estre12"
+                                android:layout_weight="1"
+                                android:onClick="estr12"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/estre13"
+                                android:layout_weight="1"
+                                android:onClick="estr13"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/estre14"
+                                android:layout_weight="1"
+                                android:onClick="estr14"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/estre15"
+                                android:layout_weight="1"
+                                android:onClick="estr15"/>
+
+
+                        </LinearLayout>
+
+
+
+
 
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/CAJAS"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <TextView
+                    android:orientation="vertical"
+                    android:weightSum="3">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/caja16"
+                            android:layout_weight="1"
+                            android:onClick="caj16"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/caja17"
+                            android:layout_weight="1"
+                            android:onClick="caj17"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/caja18"
+                            android:layout_weight="1"
+                            android:onClick="caj18"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/caja19"
+                            android:layout_weight="1"
+                            android:onClick="caj19"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/caja20"
+                            android:layout_weight="1"
+                            android:onClick="caj20"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/caja21"
+                            android:layout_weight="1"
+                            android:onClick="caj21"/>
+
+                    </LinearLayout>
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Contenido 3"/>
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/caja22"
+                            android:layout_weight="1"
+                            android:onClick="caj22"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/caja23"
+                            android:layout_weight="1"
+                            android:onClick="caj23"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/caja24"
+                            android:layout_weight="1"
+                            android:onClick="caj24"/>
+
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
